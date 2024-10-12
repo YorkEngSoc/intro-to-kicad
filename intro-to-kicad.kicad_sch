@@ -1539,12 +1539,6 @@
 		(color 0 0 0 0)
 		(uuid "dbb3b125-8c98-4d5f-9f2b-20e9f33c1779")
 	)
-	(junction
-		(at 41.91 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f15c06bb-8761-48f8-a195-1270006a2824")
-	)
 	(no_connect
 		(at 190.5 66.04)
 		(uuid "c7b3fae9-d64b-4359-9247-63f990a4a47b")
@@ -1968,16 +1962,6 @@
 			(type default)
 		)
 		(uuid "7733b507-c2a0-4b9d-863e-3c4166250be0")
-	)
-	(wire
-		(pts
-			(xy 39.37 104.14) (xy 41.91 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "843dd086-fa79-434e-a785-aa68e6e18c66")
 	)
 	(wire
 		(pts
@@ -4193,26 +4177,6 @@
 			"BC+ZNAE7AAAAAElFTkSuQmCC"
 		)
 	)
-	(text_box "Component Values\n\nR1 = 10 kΩ\nR2 = 1876Ω\nR3 = 411Ω\nR4 = 438Ω\nR5 = 456Ω\nR6 = 482Ω\nR7 = 520Ω\nR8 = 546Ω\nR9 = 570Ω\nR10 = 626Ω\nR11 = 650Ω\nR12 = 690Ω\nR13 = 730Ω\n\nC1 = 100 nF, ceramic\nC2 = 10 mF x 10V, electrolytic (CHECK POLARITY!)\nJ3 = speaker with impedance of eight ohms"
-		(exclude_from_sim no)
-		(at 17.78 151.13 0)
-		(size 46.99 41.91)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Open Sans")
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "2200f094-4f47-4503-b98c-9d61342f51a0")
-	)
 	(text "Stylus"
 		(exclude_from_sim no)
 		(at 127 52.324 0)
@@ -4265,16 +4229,6 @@
 			(justify left)
 		)
 		(uuid "7f40a234-24f3-481d-89bd-7a10dbc8e5b4")
-	)
-	(text "Key 12 doesnt need its\n own label as its\non the same wire as \n+9V which is a global label"
-		(exclude_from_sim no)
-		(at 46.736 133.096 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8fe30e5f-c52b-468b-966a-611d200f7a24")
 	)
 	(text "This pin with the X is a Non-Connect\nThis tells the software you are intentionally not connecting\nthis pin to anything. press Q for a NC"
 		(exclude_from_sim no)
@@ -4440,6 +4394,17 @@
 		)
 		(uuid "caaf0b3e-e232-425c-9803-e784be419919")
 	)
+	(label "KEY_12"
+		(at 41.91 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd18f8c9-fc66-48bf-8d88-d2cc371f5129")
+	)
 	(label "KEY_3"
 		(at 143.51 123.19 0)
 		(fields_autoplaced yes)
@@ -4514,73 +4479,6 @@
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+9V")
-		(at 39.37 104.14 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b3dd193-9adf-4862-b1fb-e04e5bb430ff")
-		(property "Reference" "#PWR05"
-			(at 43.18 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+9V"
-			(at 35.56 104.1399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+9V\""
-			(at 39.37 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7135782-8b02-422a-8370-d43507670b79")
-		)
-		(instances
-			(project "intro-to-kicad"
-				(path "/a4345fa4-d9e0-4460-8734-083d5039e811"
-					(reference "#PWR05")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4668,7 +4566,7 @@
 				)
 			)
 		)
-		(property "Value" "730"
+		(property "Value" "30K"
 			(at 49.53 100.33 90)
 			(effects
 				(font
@@ -4736,7 +4634,7 @@
 				)
 			)
 		)
-		(property "Value" "482"
+		(property "Value" "30k"
 			(at 132.08 100.33 90)
 			(effects
 				(font
@@ -4934,7 +4832,7 @@
 				)
 			)
 		)
-		(property "Value" "1876"
+		(property "Value" "30K"
 			(at 179.07 100.33 90)
 			(effects
 				(font
@@ -5222,7 +5120,7 @@
 				)
 			)
 		)
-		(property "Value" "690"
+		(property "Value" "30K"
 			(at 60.96 100.33 90)
 			(effects
 				(font
@@ -5492,7 +5390,7 @@
 				)
 			)
 		)
-		(property "Value" "520"
+		(property "Value" "30K"
 			(at 120.65 100.33 90)
 			(effects
 				(font
@@ -5627,7 +5525,7 @@
 				)
 			)
 		)
-		(property "Value" "650"
+		(property "Value" "30K"
 			(at 72.39 100.33 90)
 			(effects
 				(font
@@ -5695,7 +5593,7 @@
 				)
 			)
 		)
-		(property "Value" "570"
+		(property "Value" "30K"
 			(at 97.79 100.33 90)
 			(effects
 				(font
@@ -5969,7 +5867,7 @@
 				)
 			)
 		)
-		(property "Value" "626"
+		(property "Value" "30K"
 			(at 85.09 100.33 90)
 			(effects
 				(font
@@ -6037,7 +5935,7 @@
 				)
 			)
 		)
-		(property "Value" "411"
+		(property "Value" "30K"
 			(at 167.64 100.33 90)
 			(effects
 				(font
@@ -6105,7 +6003,7 @@
 				)
 			)
 		)
-		(property "Value" "546"
+		(property "Value" "30K"
 			(at 109.22 100.33 90)
 			(effects
 				(font
@@ -6474,7 +6372,7 @@
 				)
 			)
 		)
-		(property "Value" "438"
+		(property "Value" "30K"
 			(at 156.21 100.33 90)
 			(effects
 				(font
@@ -6542,7 +6440,7 @@
 				)
 			)
 		)
-		(property "Value" "456"
+		(property "Value" "30k"
 			(at 144.78 100.33 90)
 			(effects
 				(font

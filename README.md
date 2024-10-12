@@ -1,6 +1,6 @@
 # Intro to KiCad
 
-![Pictures\3D-final.png]()
+![PCB](https://github.com/YorkEngSoc/intro-to-kicad/blob/main/Pictures/3D-final.png?raw=true)
 
 ## Overview
 
@@ -8,7 +8,7 @@ Welcome to the **Intro to KiCad** repository. This lab script is designed to int
 
 This repository contains all necessary libraries, project files, and references to help you complete the lab.
 
----
+
 
 ## Repository Structure
 
@@ -19,7 +19,6 @@ intro-to-kicad/
 ├── Example Project/     # Completed project files for reference
 ├── Libraries/           # Symbol and footprint libraries
 ├── Pictures/            # Images for documentation
-├── intro-to-kicad-backups/ # Backup files for the project
 ```
 
 ## Prerequisites

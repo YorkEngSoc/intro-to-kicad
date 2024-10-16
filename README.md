@@ -1,6 +1,6 @@
 # Intro to KiCad
 
-![PCB](https://github.com/YorkEngSoc/intro-to-kicad/blob/main/Pictures/3D-final.png?raw=true)
+![PCB](https://github.com/YorkEngSoc/intro-to-kicad/blob/main/Pictures/3D%20Board%20View.png?raw=true)
 
 ## Overview
 
